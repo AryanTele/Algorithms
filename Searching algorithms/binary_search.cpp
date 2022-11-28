@@ -13,19 +13,3 @@ int binary_search(int arr[], int n, int key) {
 	}
 	return -1;
 }
-int linear_search(int arr[], int n, int key) {
-	for(int i = 0; i < n; i++) {
-		if (arr[i] == key) {
-			return i;
-		}
-	}
-	return -1;
-}
-int main() {
-	int arr[5] = {1,2,4,5,6};
-	int n = sizeof(arr)/sizeof(int);
-	int key = 21;
-	int index = binary_search(arr, n, key);
-	if(index != -1) cout<<key<<" is at index "<<index<<endl;
-	else cout<<key<<" is not present"<<endl;
-}
